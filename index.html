@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M S Nagraj | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#home">M S <span>Nagraj.</span></a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <p class="tag">BCA STUDENT · ASPIRING WEB DEVELOPER</p>
+  <h1>Hello, I'm <span>M S Nagraj</span></h1>
+  <h2>I love building for the web.</h2>
+  <p class="intro">
+    I am interested in website development, coding and debugging.
+    I enjoy learning new technologies and building useful projects.
+  </p>
+  <a class="button" href="#about">View My Profile ↗</a>
+  <a class="button secondary" href="#projects">View Projects</a>
+</section>
+
+<section id="about" class="section">
+  <p class="tag">01 / ABOUT ME</p>
+  <h2>About <span>Me</span></h2>
+  <p>
+    My name is M S Nagraj. I am studying Bachelor of Computer
+    Applications (BCA) at Kumadvathi 1st Grade College.
+    My expected graduation year is 2027.
+  </p>
+  <p>
+    I am interested in developing websites, coding and debugging code.
+    I enjoy solving problems and improving my programming skills.
+  </p>
+  <p><b>Location:</b> Shikaripura, Shivamogga District, Karnataka</p>
+  <p><b>Education:</b> BCA — Expected graduation 2027</p>
+</section>
+
+<section id="skills" class="section">
+  <p class="tag">02 / MY SKILLS</p>
+  <h2>Technical <span>Skills</span></h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Python</h3>
+      <p>Programming and problem-solving</p>
+    </div>
+    <div class="card">
+      <h3>PHP</h3>
+      <p>Server-side web development</p>
+    </div>
+    <div class="card">
+      <h3>HTML</h3>
+      <p>Web page structure</p>
+    </div>
+    <div class="card">
+      <h3>CSS</h3>
+      <p>Website styling and layout</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <p class="tag">03 / MY WORK</p>
+  <h2>My <span>Projects</span></h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Online Food Ordering</h3>
+      <p>A website project concept for browsing food and placing orders online.</p>
+      <a href="#" class="text-link">Project link ↗</a>
+    </div>
+    <div class="card">
+      <h3>Temperature Converter</h3>
+      <p>A project for converting temperature values between Celsius and Fahrenheit.</p>
+      <a href="#" class="text-link">Project link ↗</a>
+    </div>
+  </div>
+</section>
+
+<section id="certificates" class="section">
+  <p class="tag">04 / ACHIEVEMENTS</p>
+  <h2>My <span>Certificates</span></h2>
+
+  <div class="card certificate-card">
+    <div>
+      <h3>Getting Started with Artificial Intelligence</h3>
+      <p>IBM SkillsBuild · Issued January 30, 2026</p>
+      <a
+        href="https://www.credly.com/badges/916c65d3-0ca7-4cb6-a954-8e2cec1ac63c"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-link">
+        Verify certificate ↗
+      </a>
+    </div>
+    <button class="button" onclick="viewCertificate()">
+      View Certificate
+    </button>
+  </div>
+
+  <div class="card certificate-card">
+    <div>
+      <h3>More Certificates</h3>
+      <p>Additional certificates can be added when available.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== RESUME SECTION START ========== -->
+<section id="resume" class="section">
+  <p class="tag">05 / MY RESUME</p>
+  <h2>My <span>Resume</span></h2>
+
+  <div class="card certificate-card">
+    <div>
+      <h3>M S Nagraj</h3>
+      <p>BCA Student · Aspiring Web Developer</p>
+      <p>
+        Explore my educational background, technical skills,
+        projects and achievements in my resume.
+      </p>
+
+      <a
+        href="resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button">
+        View My Resume ↗
+      </a>
+    </div>
+  </div>
+</section>
+<!-- ========== RESUME SECTION END ========== -->
+
+<section id="contact" class="section">
+  <p class="tag">06 / GET IN TOUCH</p>
+  <h2>Contact <span>Me</span></h2>
+  <p>Let's connect and talk about coding and web development.</p>
+
+  <!-- Replace these placeholders with your actual details -->
+  <p>Email: <a href="mailto:nagarajms271@gmail.com">YOUR_EMAIL_HERE</a></p>
+  <p>GitHub: <a href="https://github.com/nagarajms271">My GitHub</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/ms-nagaraj-813088446?utm_source=share_via&utm_content=profile&utm_medium=member_ios">My LinkedIn</a></p>
+</section>
+
+<footer>
+  <p>© 2026 M S Nagraj | Portfolio</p>
+  <a href="#home">Back to top ↑</a>
+</footer>
+
+<!-- Certificate popup -->
+<div class="modal" id="certificateModal">
+  <div class="modal-content">
+    <button class="close" onclick="closeCertificate()">×</button>
+    <h2>IBM AI Certificate</h2>
+    <p>
+      Place your certificate PDF in the certificates folder and name it
+      <b>ibm-ai-certificate.pdf</b>.
+    </p>
+    <iframe
+      id="certificateFrame"
+      title="IBM AI Certificate"
+      src="">
+    </iframe>
+    <a
+      class="button"
+      href="IBMDesign20260130-28-sp70dj.pdf"
+      target="_blank">
+      Open PDF in new tab
+    </a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
